@@ -1,0 +1,15 @@
+h2:first-of-type  {
+    color: blue;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h1 {
+    color: red;
+}
+
