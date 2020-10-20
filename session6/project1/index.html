@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <div class="bg-red-500 p-6 text-center text-white">
+            <h1>Welcome {{ name }}, search for any YouTube videos:</h1>
+        </div>
+
+        <div class="w-full p-4 flex justify-center">
+            <input v-model="search" class="border p-3" type="text" placeholder="Search...">
+            <button @click="submit" class="bg-red-500 text-white p-3">Submit</button>
+        </div>
+        
+        <p v-if="showErrorMessage" class="text-orange-500 text-center block">We don't have the video that you're looking for!</p>
+
+        <div>
+            <p>Recommended Videos</p>
+
+            <div class="flex w-full flex-wrap">
+                <div v-for="video in videos" :key="video" class="w-1/3 p-4 shadow border">{{ video }}</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    name: "",
+                    search: "",
+                    showErrorMessage: false,
+                    videos: [
+                        "video1",
+                        "video2",
+                        "video3",
+                        "video4",
+                        "video5",
+                        "video6",
+                        "video7",
+                        "video8",
+                        "video9",
+                        "video10",
+                    ]
+                }
+            },
+            mounted() {
+                this.name = "Saleem"
+            },
+            methods: {
+                submit() {
+                    this.showErrorMessage = true
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

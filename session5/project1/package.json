@@ -1,0 +1,24 @@
+{
+  "name": "git-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saleem-hadad/git-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saleem-hadad/git-demo/issues"
+  },
+  "homepage": "https://github.com/saleem-hadad/git-demo#readme",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss-cli": "^8.1.0",
+    "tailwind": "^4.0.0"
+  }
+}
