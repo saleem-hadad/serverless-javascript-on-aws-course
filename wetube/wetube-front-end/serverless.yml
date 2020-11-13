@@ -8,4 +8,4 @@ inputs:
     hook: npm run build
     dist: ./dist
   env:
-    BACKEND_URL: "https://u8kwyeo7xf.execute-api.us-east-1.amazonaws.com"
+    API: "https://u8kwyeo7xf.execute-api.us-east-1.amazonaws.com"

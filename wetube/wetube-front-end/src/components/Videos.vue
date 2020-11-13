@@ -10,6 +10,7 @@
 
 <script>
 import Video from './Video.vue';
+import config from '../config'
 
 export default {
     data() {
@@ -18,7 +19,7 @@ export default {
         }
     },
     mounted() {
-        fetch('https://u8kwyeo7xf.execute-api.us-east-1.amazonaws.com/videos')
+        fetch(config.domains.api + '/videos')
             .then(response => response.json())
             .then(response => {
                 this.videos = response.videos
