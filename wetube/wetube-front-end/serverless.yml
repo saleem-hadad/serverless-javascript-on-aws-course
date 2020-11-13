@@ -1,6 +1,11 @@
-component: express
-name: wetube-backed
+name: wetube-frontend
+component: website
 org: saleemhadad
 
 inputs:
-  src: ./
+  src:
+    src: ./src
+    hook: npm run build
+    dist: ./dist
+  env:
+    BACKEND_URL: "https://u8kwyeo7xf.execute-api.us-east-1.amazonaws.com"

@@ -18,7 +18,7 @@ export default {
         }
     },
     mounted() {
-        fetch('http://localhost:3000/videos')
+        fetch('https://u8kwyeo7xf.execute-api.us-east-1.amazonaws.com/videos')
             .then(response => response.json())
             .then(response => {
                 this.videos = response.videos
